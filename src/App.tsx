@@ -3,9 +3,14 @@ import { TaskProvider } from "./providers/TaskProvider";
 
 function App() {
   return (
-    <TaskProvider>
-      <Dashboard />
-    </TaskProvider>
+    <>
+      <h1 className="text-3xl text-palette-800 py-3 text-center">
+        A Simple Project of Time Management
+      </h1>
+      <TaskProvider>
+        <Dashboard />
+      </TaskProvider>
+    </>
   );
 }
 

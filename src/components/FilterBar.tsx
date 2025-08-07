@@ -12,10 +12,10 @@ const FilterBar: React.FC = () => {
     };
 
   return (
-    <div className="p-4 bg-gray-100 rounded-md shadow space-y-4">
+    <div className="p-4 bg-gray-100 rounded-md shadow space-y-4 w-full sm:w-full md:w-2xl">
       <h2 className="text-lg font-semibold mb-2">Filters</h2>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-full md:w-xl">
         <label htmlFor="status" className="text-sm font-medium mb-1">
           Select Status
         </label>
@@ -31,7 +31,7 @@ const FilterBar: React.FC = () => {
         </select>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-full md:w-xl">
         <label htmlFor="priority" className="text-sm font-medium mb-1">
           Select Priority
         </label>
@@ -48,7 +48,7 @@ const FilterBar: React.FC = () => {
         </select>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-full md:w-xl">
         <label htmlFor="category" className="text-sm font-medium mb-1">
           Select Category
         </label>
@@ -66,7 +66,7 @@ const FilterBar: React.FC = () => {
         </select>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-full md:w-xl">
         <label htmlFor="dueDate" className="text-sm font-medium mb-1">
           Select Due Date
         </label>
@@ -84,7 +84,7 @@ const FilterBar: React.FC = () => {
         </select>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-full md:w-xl">
         <label htmlFor="assignedUser" className="text-sm font-medium mb-1">
           Select Assigned User
         </label>
