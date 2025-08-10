@@ -12,7 +12,7 @@ const FilterBar: React.FC = () => {
     };
 
   return (
-    <div className="p-4 bg-gray-100 rounded-md shadow space-y-4 w-full sm:w-full md:w-2xl">
+    <div className="p-4 bg-gray-100 rounded-md flex flex-col  shadow space-y-4 w-[370px]  md:w-2xl">
       <h2 className="text-lg font-semibold mb-2">Filters</h2>
 
       <div className="flex flex-col w-full sm:w-full md:w-xl">

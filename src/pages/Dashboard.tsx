@@ -8,12 +8,13 @@ const Dashboard: React.FC = () => {
   const [editingTask, setEditingTask] = useState<Task | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-      <div className="col-span-2 space-y-6">
-        <FilterBar />
-        <TaskList setEditingTask={setEditingTask} />
-      </div>
+    <div className="flex flex-col justify-center  bg-palette-100 items-center gap-6 space-y-5 pt-10 pb-10">
+      <h1 className="text-3xl text-palette-800  text-center">
+        Dashboard of a Simple Project Management
+      </h1>
       <TaskForm editingTask={editingTask} setEditingTask={setEditingTask} />
+      <FilterBar />
+      <TaskList setEditingTask={setEditingTask} />
     </div>
   );
 };

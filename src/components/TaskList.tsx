@@ -45,7 +45,7 @@ const TaskList: React.FC<TaskListProps> = ({ setEditingTask }) => {
   };
 
   return (
-    <div className="p-4 bg-white rounded shadow">
+    <div className="p-4 bg-white rounded shadow w-[370px]  md:w-2xl ">
       <h2 className="text-lg font-semibold mb-3">Task List</h2>
       {filteredTasks.length === 0 ? (
         <p className="text-gray-500">No tasks found.</p>
@@ -54,7 +54,7 @@ const TaskList: React.FC<TaskListProps> = ({ setEditingTask }) => {
           {filteredTasks.map((task) => (
             <li
               key={task.id}
-              className="flex items-center flex-col sm:flex-col md:flex-row justify-between bg-gray-50 border p-3 rounded"
+              className="flex items-center flex-col gap-3 sm:flex-col md:flex-row justify-between bg-gray-50 border p-3 rounded"
             >
               <div className="flex flex-col">
                 <p
